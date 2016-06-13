@@ -5,26 +5,49 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Friendship4Ever Chatty</title>
 
-	<link rel="stylesheet" href="css/normalize.css">
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/light.css">
+	<link rel="stylesheet" href="light.css">
 	<link rel="stylesheet" href="css/dark.css">
+	<link href="http://img11.deviantart.net/a71b/i/2013/252/4/4/friendship_bracelets_by_tarin_moore-d6lo9t4.jpg" rel="stylesheet">
 
 </head>
+
+
+<section class="hero">
+  <div class="row intro">
+    <div class="small-centered medium-uncentered medium-6 large-7 columns">
+      <h1>Friendship4Ever</h1>
+    </div>
+    <div class="small-centered medium-uncentered medium-6 large-5 columns">
+      <div class="tech-img"></div>
+    </div>
+  </div>
+</section>
+    
+
 <body>
   <div class="chattyBox">
     <h2 class="chattyTitle">Friendship4Ever Chatty</h2>
-		<textarea rows="1" cols="50" id="textInput" placeholder="Enter your text here..."></textarea>
+	
+	<img src="Let'sBe Friends!.jpg" alt="Friends Logo">	
+
+		<input type="text" class="input" rows="1" cols="50" placeholder="Enter your text here..."></input>
 		<button id="clearBoard" class="buttons">Clear Message Board</button>
+    
     <input type="checkbox" id="darkTheme" class="checkboxButton"> Dark Theme </button>
-    <input type="checkbox" id="darkTheme" class="checkboxButton"> Light Theme </button>
+    <input type="checkbox" id="lightTheme" class="checkboxButton"> Light Theme </button>
+
   </div> 
-	<fieldset>
+	<fieldset class="messages">
 		<legend> Messages: </legend>
 		<p>Hey dudes, I got that new shipment of bracelets in. Pure and uncut...</p>
 		<button id="deleteMessage-1" class="buttons">Delete</button> <!-- id set with "classList.add" -->
 
 	</fieldset>
+
+
+
 	<footer>
 	  <ul>
 	    <li><a href="#" class="social twitter">Twitter</a></li>
