@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Friendship4Ever Chatty</title>
+
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="light.css">
+	<link rel="stylesheet" href="dark.css">
+
+</head>
+<body>
+  <div class="chattyBox">
+    <h2 class="chattyTitle">Friendship4Ever Chatty</h2>
+		<textarea rows="1" cols="50" id="textInput" placeholder="Enter your text here..."></textarea>
+		<button id="clearBoard" class="buttons">Clear Message Board</button>
+    <input type="checkbox" id="darkTheme" class="checkboxButton"> Dark Theme </button>
+    <input type="checkbox" id="darkTheme" class="checkboxButton"> Light Theme </button>
+  </div> 
+	<fieldset>
+		<legend> Messages: </legend>
+		<p>Hey dudes, I got that new shipment of bracelets in. Pure and uncut...</p>
+		<button id="deleteMessage-1" class="buttons">Delete</button> <!-- id set with "classList.add" -->
+
+	</fieldset>
+	<footer>
+	  <ul>
+	    <li><a href="#" class="social twitter">Twitter</a></li>
+	    <li><a href="#" class="social linkedin">LinkedIn</a></li>
+	    <li><a href="https://github.com/nss-day-cohort-14/spa-group-chatty-friendship4ever" class="social github">Github</a></li>
+	  </ul>
+	  <p class="copyright">Copyright 2016, Friendship4Ever</p>
+	</footer>
+
+	<script src="chat.js"></script>
+	<script src=".js"></script>
+	<script src=".js"></script>
+	<script src=".js"></script>
+	<script src="chatEvents.js"></script>
+</body>
+</html>
