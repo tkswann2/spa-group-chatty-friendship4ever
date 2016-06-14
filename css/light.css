@@ -1,9 +1,11 @@
 
 h2 {
-	font-size: 30px;
-	text-align: center;
+	font-size: 2rem;
+	text-align: left;
+  font-weight: 900;
+  margin-left: 30px;
   color: rgba(033,043,064,.9);
-  text-shadow: 0px 1px 2px #456;
+  text-shadow: -1px -1px 1px #C2E078, -2px -2px 1px #fff, 1px 1px 1px #C2E078, 2px 2px 1px #547B97  ;
 }
 
 body {
@@ -14,19 +16,19 @@ body {
 
 .input { 
 	width: 50%;
-	margin: 10px;
+	margin: 20px;
  }
 
 .messages {
 	background-color: rgba(186,220,221,.9);
-	margin: 10%;
-  width: 80%;
-  height: 250px;
+	margin: 3%;
+  width: 94%;
+  /*height: 90%;*/
+  resize: none;
   padding: 10px 40px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 3px 25px 3px 25px;
-  resize: none;
   box-shadow: 0px 4px 2px -2px rgba(030,035,045, 0.6);
 }
 
@@ -43,7 +45,7 @@ body {
 .background puts a static image in the background inside the div
 ******************************************************/
 html {
-  background: url(http://img11.deviantart.net/a71b/i/2013/252/4/4/friendship_bracelets_by_tarin_moore-d6lo9t4.jpg) no-repeat center center fixed; 
+  background: url(../img/backgroundImg.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   box-sizing: border-box;
@@ -78,6 +80,7 @@ header {
   box-shadow: 0px 3px 6px 0px rgba(030,035,045, 0.5);
   border-bottom: 3px dotted rgba(084,123,151,.2);
   background-image: linear-gradient(to right, rgba(194,224,120,.1), rgba(194,224,120,.8) 30%, rgba(194,224,120,.8) 70%, rgba(194,224,120,.1) 100%);;
+  clear:both;
 }
 
 legend {
@@ -163,12 +166,29 @@ p.copyright {
   margin: 5px 0 0 0;
 }
 
+.chattyBox { 
+  background-color: rgba(255,255,255,.4);
+  padding: 30px;
+  margin: 5%;
+  height: auto;
+  border:3px solid rgba(194,224,120,.7);
+  border-radius: 3px 25px 3px 25px;
+  box-shadow: 0px 4px 2px -2px rgba(030,035,045, 0.6);
+  overflow: scroll;
+  clear:both;
+ }
+
+
+
 /* ROTATE & ZOOM */
-#clearBoard {
-  padding: 4px 0;
+#logo {
+  padding: 5px 10px 0px 20px;
+  width: 120px;
+  height: 120px;
   transition: all 1s;
+  float:left;
 }
-#clearBoard:hover {
+#logo:hover {
   transform: scale(1.2) rotate(360deg); 
 }
 
