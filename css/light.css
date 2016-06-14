@@ -136,7 +136,6 @@ footer p {
 
 .footer {
   position: absolute;
-  bottom: 0%;
   left: 0%;
   right: 0%;
   text-align: center;
@@ -183,7 +182,7 @@ p.copyright {
 /* ROTATE & ZOOM */
 #logo {
   padding: 5px 10px 0px 20px;
-  width: 120px;
+  /*width: 120px;*/
   height: 120px;
   transition: all 1s;
   float:left;
