@@ -1,5 +1,5 @@
 /**************** ADD TO MAIN? ******************/
-* { 
+/** { 
   box-sizing: border-box;
 }
 
@@ -41,7 +41,7 @@ p.copyright {
 	font-size: .8rem;
 	margin: 5px;
 }
-
+*/
 
 .darkImg {
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
@@ -67,13 +67,4 @@ p.copyright {
 	color: white;
 	background: rgb(033,043,064);
  }
-
-
-/* ROTATE & ZOOM */
-#clearBoard {
-  transition: all 1s;
-}
-#clearBoard:hover {
-  transform: scale(1.5) rotate(360deg);
-}
 
