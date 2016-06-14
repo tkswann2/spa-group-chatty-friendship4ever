@@ -31,19 +31,19 @@
 		</header>
 
   <div class="chattyBox">
-		<input type="text" class="input" rows="1" cols="50" placeholder="Enter your text here..."></input>
+		<input type="text" id="textInput" placeholder="Enter your text here..."></input>
 		<button id="clearBoard" class="buttons">Clear Message Board</button>
     
     <input type="checkbox" id="darkTheme" class="checkboxButton"> Dark Theme </input>
     <input type="checkbox" id="lightTheme" class="checkboxButton"> Light Theme </input>
 
-		<fieldset class="messages">
-			<legend> Messages: </legend>
-			<p>Hey dudes, I got that new shipment of bracelets in. Pure and uncut...</p>
-			<button id="deleteMessage-1" class="buttons">Delete</button> <!-- id set with "classList.add" -->
-		</fieldset>
-	</div>
-	
+  </div> 
+	<fieldset class="messages">
+		<legend> Messages: </legend>
+			<ul id="messageOutput">
+		
+			</ul>
+	</fieldset>
 
 
 
@@ -63,9 +63,10 @@
 	</footer>
 
 	<script src="js/chat.js"></script>
-<!-- 	<script src="js/.js"></script>
-	<script src="js/.js"></script>
-	<script src="js/.js"></script> -->
 	<script src="js/chatEvents.js"></script>
+	<script src="js/inputEvent.js"></script>
+	<script src="js/deleteEvents.js"></script>
+<!-- 	<script src="js/.js"></script>
+	<script src="js/.js"></script> -->
 </body>
 </html>
