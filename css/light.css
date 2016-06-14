@@ -12,18 +12,19 @@ body {
 	font-family: "Raleway", sans-serif;
 	font-size: 15px;
 	box-sizing: border-box;
+  margin-bottom: 81px;
 }
 
-.input { 
-	width: 50%;
-	margin: 20px;
+#textInput { 
+	width: 40%;
+	margin: 10px;
+  margin-left: 3%;
  }
 
 .messages {
 	background-color: rgba(186,220,221,.9);
 	margin: 3%;
   width: 94%;
-  /*height: 90%;*/
   resize: none;
   padding: 10px 40px;
   box-sizing: border-box;
@@ -35,9 +36,15 @@ body {
 .checkboxButton { 
 	background-color: white;
   margin: 10px;
-  padding: 50px;
+  display: inline-block;
  }
 
+#messageOutput {
+  overflow-y: scroll;
+  height: 320px;
+  margin-top: 10px;
+
+}
 
 
 /*hero image styling*/
@@ -76,7 +83,7 @@ html {
 }
 header {
   background-color: rgba(033,043,064, .5);
-  padding: 10px 0 10px 0;
+  padding: 10px 0 5px 0;
   box-shadow: 0px 3px 6px 0px rgba(030,035,045, 0.5);
   border-bottom: 3px dotted rgba(084,123,151,.2);
   background-image: linear-gradient(to right, rgba(194,224,120,.1), rgba(194,224,120,.8) 30%,
@@ -144,7 +151,7 @@ footer p {
 }
 footer {
   background-color: rgba(084,123,151,.5);
-  padding: 10px 0 10px 0;
+  padding: 0px 0 5px 0;
   box-shadow: 0px 4px 2px -2px rgba(030,035,045, 0.7);
   border-top: 3px dotted rgba(084,123,151,.2);
 }
@@ -169,13 +176,12 @@ p.copyright {
 
 .chattyBox { 
   background-color: rgba(255,255,255,.4);
-  padding: 30px;
-  margin: 5%;
+  padding: 25px;
+  margin: 4%;
   height: auto;
   border:3px solid rgba(194,224,120,.7);
   border-radius: 3px 25px 3px 25px;
   box-shadow: 0px 4px 2px -2px rgba(030,035,045, 0.6);
-  overflow: scroll;
  }
 
 
@@ -189,7 +195,7 @@ p.copyright {
   float:left;
 }
 #logo:hover {
-  transform: scale(1.2) rotate(360deg); 
+  transform: scale(2) rotate(1080deg); 
 }
 
 
