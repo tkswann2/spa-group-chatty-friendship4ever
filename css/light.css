@@ -1,13 +1,13 @@
 
 h2 {
-
-	font-size: 20px;
+	font-size: 30px;
 	text-align: center;
+  color: rgba(033,043,064,.9);
+  text-shadow: 0px 1px 2px #456;
 }
 
-
 body {
-	font-family: Raleway, sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-size: 15px;
 	box-sizing: border-box;
 }
@@ -15,54 +15,166 @@ body {
 .input { 
 	width: 50%;
 	margin: 10px;
-
  }
 
 .messages {
-	background-color: #BADCDD;
+	background-color: rgba(186,220,221,.9);
 	margin: 10%;
-    width: 80%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    resize: none;
+  width: 80%;
+  height: 250px;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 3px 25px 3px 25px;
+  resize: none;
+  box-shadow: 0px 4px 2px -2px rgba(030,035,045, 0.6);
 }
 
 .checkboxButton { 
-	margin: 10px;
-
+	background-color: white;
+  margin: 10px;
+  padding: 50px;
  }
-
-
-
-
 
 
 
 /*hero image styling*/
-
-
-.hero {
-  background: url("http://img11.deviantart.net/a71b/i/2013/252/4/4/friendship_bracelets_by_tarin_moore-d6lo9t4.jpg") no-repeat center center;
+/******************************************************
+.background puts a static image in the background inside the div
+******************************************************/
+html {
+  background: url(http://img11.deviantart.net/a71b/i/2013/252/4/4/friendship_bracelets_by_tarin_moore-d6lo9t4.jpg) no-repeat center center fixed; 
   background-size: cover;
-  height: 30vh; }
- 
-  .hero .intro {
-    padding: 4rem;
-    position: relative;
-    top: 90%;
-    transform: translateY(-50%); }
-  .hero h1 {
-    color: #fff;
-    font-size: 1.5rem;
-    line-height: 1.5em;
-    letter-spacing: 0.025em;
-    font-weight: 300;
-    text-align: center; }
-  
-  
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.hero .intro {
+  padding: 4rem;
+  position: relative;
+  top: 90%;
+  transform: translateY(-50%); }
+.hero h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  letter-spacing: 0.025em;
+  font-weight: 300;
+  text-align: center; }
+
+
+
+/********************** Eric Added ***********************/
+.header {
+  /*position: absolute;*/
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  text-align: center;
+}
+header {
+  background-color: rgba(033,043,064, .5);
+  padding: 10px 0 10px 0;
+  box-shadow: 0px 3px 6px 0px rgba(030,035,045, 0.5);
+  border-bottom: 3px dotted rgba(084,123,151,.2);
+  background-image: linear-gradient(to right, rgba(194,224,120,.1), rgba(194,224,120,.8) 30%, rgba(194,224,120,.8) 70%, rgba(194,224,120,.1) 100%);;
+}
+
+legend {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 6px 50px;
+  border: 3px solid rgba(194,224,120,.9);
+  border-radius: 3px 15px 3px 15px;
+  background-color: rgba(084,123,151, 1);
+  box-shadow: 0px 4px 2px -2px rgba(030,035,045, 0.6);
+  transform: skew(-20deg); 
+  }
+
+
+div {
+  background-color: rgba(194,224,120,.0),
+}
+
+a {
+  color: #547B97;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all .5s;
+}
+a:hover {
+  color: white;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer li:hover {
+  box-shadow: 0px 4px 2px -2px rgba(255,255,255, 0.5);
+}
+
+footer li {
+  display: inline-block;
+  text-align: center;
+  width: 170px;
+  margin: 2px 8px;
+  padding: 10px;
+  border: 3px solid #547B97;
+  border-radius: 3px 15px 3px 15px;
+  background-color: rgba(194,224,120, .8);
+  box-shadow: 0px 4px 2px -2px rgba(030,035,045, 0.6);
+  transform: skew(-20deg); 
+  transition: all .5s;
+}
+footer p {
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  text-align: center;
+}
+footer {
+  background-color: rgba(084,123,151,.5);
+  padding: 10px 0 10px 0;
+  box-shadow: 0px 4px 2px -2px rgba(030,035,045, 0.7);
+  border-top: 3px dotted rgba(084,123,151,.2);
+}
+
+footer {
+  background-image: linear-gradient( to right, 
+    rgba(186,220,221,.1),
+    rgba(186,220,221,.8) 30%,
+    rgba(186,220,221,.8) 70%,
+    rgba(186,220,221,.1) 100%
+  );
+}
+
+ul {
+  margin: 5px;
+  padding: 0;
+}
+p.copyright {
+  font-size: .8rem;
+  margin: 5px 0 0 0;
+}
+
+/* ROTATE & ZOOM */
+#clearBoard {
+  padding: 4px 0;
+  transition: all 1s;
+}
+#clearBoard:hover {
+  transform: scale(1.2) rotate(360deg); 
+}
+
+
+/********************** Media Query Stuff ***********************/
+
   @media only screen and (min-width: 40.063em) {
     .hero .tech-img {
       height: 18rem;
