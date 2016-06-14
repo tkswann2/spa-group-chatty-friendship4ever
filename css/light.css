@@ -79,7 +79,8 @@ header {
   padding: 10px 0 10px 0;
   box-shadow: 0px 3px 6px 0px rgba(030,035,045, 0.5);
   border-bottom: 3px dotted rgba(084,123,151,.2);
-  background-image: linear-gradient(to right, rgba(194,224,120,.1), rgba(194,224,120,.8) 30%, rgba(194,224,120,.8) 70%, rgba(194,224,120,.1) 100%);;
+  background-image: linear-gradient(to right, rgba(194,224,120,.1), rgba(194,224,120,.8) 30%,
+   rgba(194,224,120,.8) 70%, rgba(194,224,120,.1) 100%);
   clear:both;
 }
 
@@ -135,9 +136,10 @@ footer p {
 }
 
 .footer {
-  position: absolute;
-  left: 0%;
-  right: 0%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
 }
 footer {
@@ -174,7 +176,6 @@ p.copyright {
   border-radius: 3px 25px 3px 25px;
   box-shadow: 0px 4px 2px -2px rgba(030,035,045, 0.6);
   overflow: scroll;
-  clear:both;
  }
 
 
