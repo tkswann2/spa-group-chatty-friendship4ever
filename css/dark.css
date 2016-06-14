@@ -43,6 +43,32 @@ p.copyright {
 }
 
 
+.darkImg {
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+
+.h2Dark	{
+	color: rgb(255,255,255);
+}
+
+.messagesDark { 
+	color: white;
+	background: rgb(033,043,064);
+ }
+
+.legendDark { 
+	color: white;
+	background: rgb(033,043,064);
+ }
+
+.paragraphDark { 
+	color: white;
+	background: rgb(033,043,064);
+ }
+
+
 /* ROTATE & ZOOM */
 #clearBoard {
   transition: all 1s;
@@ -50,6 +76,4 @@ p.copyright {
 #clearBoard:hover {
   transform: scale(1.5) rotate(360deg);
 }
-=======
-/* Version 2 (Tuesday)*/
->>>>>>> master
+

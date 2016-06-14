@@ -25,10 +25,10 @@
       src="http://img11.deviantart.net/a71b/i/2013/252/4/4/friendship_bracelets_by_tarin_moore-d6lo9t4.jpg" alt="background wall image"> -->
 
  	<!-- /header -->
-  <div class="chattyBox">
+  <div class="chattyBox" id="chattyBox">
 	 	<header id="header" class="header">
 	    <h2 class="chattyTitle">Friendship4Ever Chatty</h2>
-			<img src="Let'sBe Friends!.jpg" alt="Friends Logo">	
+			<img src="Let'sBe Friends!.jpg" alt="Friends Logo" id="image">	
 		</header>
 
 
@@ -38,13 +38,16 @@
     <input type="checkbox" id="darkTheme" class="checkboxButton"> Dark Theme </input>
     <input type="checkbox" id="lightTheme" class="checkboxButton"> Light Theme </input>
 
-  </div> 
-	<fieldset class="messages">
-		<legend> Messages: </legend>
+
+		<fieldset class="messages" id="messages">
+			<legend> Messages: </legend>
 			<ul id="messageOutput">
 		
 			</ul>
-	</fieldset>
+			
+		</fieldset>
+	</div>
+	
 
 
 
@@ -64,10 +67,11 @@
 	</footer>
 
 	<script src="js/chat.js"></script>
+	<script src="js/darkTheme.js"></script>
+	<script src="js/chatEvents.js"></script>
 	<script src="js/chatEvents.js"></script>
 	<script src="js/inputEvent.js"></script>
 	<script src="js/deleteEvents.js"></script>
-<!-- 	<script src="js/.js"></script>
-	<script src="js/.js"></script> -->
+
 </body>
 </html>
