@@ -1,3 +1,26 @@
 
 
-/* Version 2 (Tuesday)*/
+.darkImg {
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+
+.h2Dark	{
+	color: rgb(255,255,255);
+}
+
+.messagesDark { 
+	color: white;
+	background: rgb(033,043,064);
+ }
+
+.legendDark { 
+	color: white;
+	background: rgb(033,043,064);
+ }
+
+.paragraphDark { 
+	color: white;
+	background: rgb(033,043,064);
+ }
