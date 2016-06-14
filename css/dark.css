@@ -1,3 +1,55 @@
+/**************** ADD TO MAIN? ******************/
+* { 
+  box-sizing: border-box;
+}
+
+a {
+  color: #547B97;
+  text-decoration: none;
+  transition: all .5s;
+}
+a:hover {
+  color: #212B40;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer li {
+	text-align: center;
+  width: 170px;
+	margin: 5px;
+	padding: 10px;
+	border: 2px solid #BADCDD;
+	border-radius: 0 10px 0 10px;
+	background-color: #C2E078;
+	display: inline-block;
+}
+footer p {
+	text-align: center;
+}
+footer {
+	background-color: rgba(186,220,221,.5);
+	padding: 10px 0 20px 0;
+}
+ul {
+	margin: 5px;
+	padding: 0;
+	list-style: none;
+}
+p.copyright {
+	font-size: .8rem;
+	margin: 5px;
+}
 
 
+/* ROTATE & ZOOM */
+#clearBoard {
+  transition: all 1s;
+}
+#clearBoard:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+=======
 /* Version 2 (Tuesday)*/
+>>>>>>> master
