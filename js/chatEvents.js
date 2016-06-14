@@ -2,7 +2,8 @@ var Chatty = (function (oldChatty) {
 	var userMessages = [],
 			outputUl = document.getElementById('messageOutput'),
 			inputEl = document.getElementById('textInput'),
-			clearButton = document.getElementById('clearBoard');
+			clearButton = document.getElementById('clearBoard'),
+			counter = 0;
 
 	oldChatty.parseJSON = function (jsonData) {
 		var newMsg;
@@ -53,6 +54,9 @@ var Chatty = (function (oldChatty) {
 				messageEdit = document.createElement('button'),
 				timeStamp = new Date().toString();
 
+				message.id = counter;
+				counter++;
+
 				messageUserName.innerHTML = `WhiteDragon::&nbsp;&nbsp`;
 				messageUserName.classList.add('username');
 
@@ -83,37 +87,13 @@ var Chatty = (function (oldChatty) {
 		return userMessages;
 	};
 
-	oldChatty.removeMessage = function (message) {
-		for (var i = 0, j = userMessages.length; i < j; i++) {
-			var messageTracker = userMessages[i];
-			if (message === messageTracker) {
-				userMessages.pop(message);
-			}
-		}
-	};
 
 	oldChatty.addEvents = function () {
 		inputEl.addEventListener('keydown', enterListener);
 		clearButton.addEventListener('click', clearMessages);
-		document.querySelector("body").addEventListener("click", function(event) {
-	 		 console.log(event);
-			
-	 		 // Handle the click event on any li
-	 		 if (event.target.tagName.toLowerCase() === "li") {
-	 		   console.log("You clicked on an <li> element");
-	 		 }
-			
-	 		 // Handle the click event on any DOM element with a certain class
-	 		 if (event.target.className === "delete") {
-	 		   console.log("You clicked on an `delete` element");
-	 		   event.target.parentNode.parentNode.removeChild(event.target.parentNode);
-	 		   
-	 		 }
-			
-	 		 // Inspect the `id` property of the event target
-	 		 if (event.target.id === "page-title") {
-	 		   console.log("You clicked on the page-title element");
-	 		 }
+		document.querySelector("body").addEventListener("click", function () {
+			index = event.target.parentNode.id;
+			Chatty.deleteEvents(event, index);
 		});
 	};
 
