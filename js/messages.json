@@ -1,10 +1,31 @@
 {
 	"messages": [
 		
-			{"msg": "Hey dudes, I got that new shipment of bracelets in. Pure and uncut..."},
-			{"msg": "Whoa man, this is public, keep in on the DL..."},
-			{"msg": "Count me in, I'll take 10 bracelets of stringscale"},
-			{"msg": "Work is about to get a whole lot easier!"},
-			{"msg": "All aboard the bracelet train, choo choo!!!1"}
+			{
+				"msg":{
+							"username": "Spider",
+							 "msg": "Hey dudes, I got that new shipment of bracelets in. Pure and uncut..."
+							}
+			},{
+				"msg":{
+							"username": "Tiny",
+							 "msg": "Whoa man, this is public, keep in on the DL..."
+							}
+			},{
+				"msg":{
+							"username": "BigTone",
+							 "msg": "Count me in, I'll take 10 bracelets of stringscale"
+							}
+			},{
+				"msg":{
+							"username": "BlueSmoke",
+							 "msg": "Work is about to get a whole lot easier!"
+							}
+			},{
+				"msg":{
+							"username": "John",
+							 "msg": "All aboard the bracelet train, choo choo!!!1"
+							}
+			}
 		]
 }

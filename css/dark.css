@@ -39,6 +39,7 @@ footer {
 ul {
 	margin: 5px;
 	padding: 0;
+	list-style: none;
 }
 p.copyright {
 	font-size: .8rem;
@@ -51,5 +52,5 @@ p.copyright {
   transition: all 1s;
 }
 #clearBoard:hover {
-  transform: scale(1.5) rotate(360deg); 
+  transform: scale(1.5) rotate(360deg);
 }

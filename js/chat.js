@@ -3,7 +3,6 @@ var Chatty = (function (oldChatty) {
 		
 		oldChatty.loadMessages = function () {
 			let oldMessages = new XMLHttpRequest();
-
 					oldMessages.addEventListener('load', function () {
 						messages = JSON.parse(this.responseText);
 						Chatty.parseJSON(messages);
@@ -20,6 +19,3 @@ var Chatty = (function (oldChatty) {
 
 	return oldChatty;
 })(Chatty || {});
-
-
-Chatty.loadMessages();
