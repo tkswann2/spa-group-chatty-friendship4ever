@@ -1,0 +1,19 @@
+.messages p {
+	display: inline-block;
+	clear: both;
+}
+
+.messages button {
+	float: right;
+	margin-top: 3%;
+}
+
+.time {
+	font-size: .6em;
+	font-weight: 600;
+	width: 100%;
+}
+
+.username {
+	font-weight: 900;
+}
