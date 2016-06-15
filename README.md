@@ -1,5 +1,3 @@
-# Initialize repo
-=======
 # Chatty Group Project
 
 ![Friendship4Ever screenshot](/img/F4EChatty.png?raw=true "Friendship4Ever Screenshot")
