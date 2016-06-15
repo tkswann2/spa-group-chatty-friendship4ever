@@ -17,7 +17,7 @@ footer ul {
 }
 footer li {
 	text-align: center;
-  width: 170px;
+  	width: 170px;
 	margin: 5px;
 	padding: 10px;
 	border: 2px solid #BADCDD;
@@ -43,28 +43,37 @@ p.copyright {
 }
 */
 
-.darkImg {
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
-}
+/* dark theme*/
+
 
 
 .h2Dark	{
 	color: rgb(255,255,255);
 }
 
-.messagesDark { 
+/*.messagesDark { 
 	color: white;
 	background: rgb(033,043,064);
- }
+ }*/
 
 .legendDark { 
 	color: white;
 	background: rgb(033,043,064);
  }
 
-.paragraphDark { 
+.messageOutput { 
 	color: white;
-	background: rgb(033,043,064);
+	background: rgb(084,123,151);
  }
+
+
+ /*large font*/
+
+.largeFont { 
+	font-size: 2em; 
+ }
+
+
+
+
 
