@@ -2,15 +2,7 @@
 =======
 # Chatty Group Project
 
-## Setup
-
-Every teammate copy and run the following commands in the host machine terminal.
-
-```bash
-mkdir -p ~/workspace/group-projects && cd $_
-git clone [Github Classroom repo URL]
-cd [repo name]
-```
+![Friendship4Ever screenshot](/img/F4EChatty.png?raw=true "Friendship4Ever Screenshot")
 
 ## Requirements
 

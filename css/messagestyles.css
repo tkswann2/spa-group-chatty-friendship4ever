@@ -17,3 +17,7 @@
 .username {
 	font-weight: 900;
 }
+
+#editBox {
+	width: 400%;
+}
