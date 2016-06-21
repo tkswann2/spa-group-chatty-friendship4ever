@@ -3,6 +3,10 @@
 	clear: both;
 }
 
+.messages li {
+	list-style: none;
+}
+
 .messages button {
 	float: right;
 	margin-top: 3%;
@@ -16,8 +20,13 @@
 
 .username {
 	font-weight: 900;
+	margin-right: 2%;
 }
 
 #editBox {
 	width: 400%;
+}
+
+.messageWrap {
+	float: left;
 }
